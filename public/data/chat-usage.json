@@ -1,0 +1,27 @@
+[
+  {
+    "wallet": "0xcb6445e7beb14110b77e73b025e45a72f7b49630",
+    "date": "2025-06-06",
+    "count": 5
+  },
+  {
+    "wallet": "0x803efe9c212a1b3b8d012f25aa12151a2de14a29",
+    "date": "2025-06-06",
+    "count": 4
+  },
+  {
+    "wallet": "0x5227af85052ded6d93dcea7504dccc3be91437d7",
+    "date": "2025-06-06",
+    "count": 2
+  },
+  {
+    "wallet": "0x8359c1ed1e025b8ca090b3058701ef11082b2bfb",
+    "date": "2025-06-06",
+    "count": 2
+  },
+  {
+    "wallet": "0xcb6445e7beb14110b77e73b025e45a72f7b49630",
+    "date": "2025-06-08",
+    "count": 1
+  }
+]

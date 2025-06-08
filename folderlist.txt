@@ -1,0 +1,248 @@
+Folder PATH listing for volume Windows
+Volume serial number is BAE4-F5CA
+C:.
+¦   .gitignore
+¦   CHANGELOG.md
+¦   folderlist.txt
+¦   next-env.d.ts
+¦   next.config.js
+¦   package.json
+¦   pnpm-lock.yaml
+¦   postcss.config.js
+¦   README.md
+¦   tsconfig.json
+¦   
++---.vscode
+¦       settings.json
+¦       
++---app
+¦   ¦   layout.tsx
+¦   ¦   not-found.tsx
+¦   ¦   
+¦   +---(auth)
+¦   ¦   ¦   layout.tsx
+¦   ¦   ¦   
+¦   ¦   +---reset-password
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---signin
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---signup
+¦   ¦           page.tsx
+¦   ¦           
+¦   +---(default)
+¦   ¦   ¦   layout.tsx
+¦   ¦   ¦   page.tsx
+¦   ¦   ¦   
+¦   ¦   +---about
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---blog
+¦   ¦   ¦   ¦   category-provider.tsx
+¦   ¦   ¦   ¦   filters.tsx
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   pagination.tsx
+¦   ¦   ¦   ¦   post-item.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           related-posts.tsx
+¦   ¦   ¦           
+¦   ¦   +---contact
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---help
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦           help-sidebar.tsx
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---newsletter
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---pricing
+¦   ¦           page.tsx
+¦   ¦           
+¦   +---api
+¦   ¦   +---hello
+¦   ¦           route.ts
+¦   ¦           
+¦   +---css
+¦       ¦   style.css
+¦       ¦   
+¦       +---additional-styles
+¦               custom-fonts.css
+¦               theme.css
+¦               utility-patterns.css
+¦               
++---components
+¦   ¦   benefits.tsx
+¦   ¦   career.tsx
+¦   ¦   clients.tsx
+¦   ¦   cta.tsx
+¦   ¦   dropdown.tsx
+¦   ¦   faqs.tsx
+¦   ¦   features.tsx
+¦   ¦   footer-separator.tsx
+¦   ¦   hero-about.tsx
+¦   ¦   hero-home.tsx
+¦   ¦   hero-pricing.tsx
+¦   ¦   modal-video.tsx
+¦   ¦   news.tsx
+¦   ¦   page-illustration.tsx
+¦   ¦   pricing-home.tsx
+¦   ¦   pricing-table.tsx
+¦   ¦   split-carousel.tsx
+¦   ¦   spotlight.tsx
+¦   ¦   team.tsx
+¦   ¦   testimonials.tsx
+¦   ¦   timeline.tsx
+¦   ¦   workflows.tsx
+¦   ¦   
+¦   +---mdx
+¦   ¦       image.tsx
+¦   ¦       link.tsx
+¦   ¦       mdx.tsx
+¦   ¦       utils.ts
+¦   ¦       
+¦   +---ui
+¦           footer.tsx
+¦           header.tsx
+¦           logo.tsx
+¦           mobile-menu.tsx
+¦           
++---content
+¦   +---blog
+¦   ¦       b2b-vs-b2c-product-management-how-different-are-they-really.mdx
+¦   ¦       define-your-startup-content-strategy-for-maximum-impact.mdx
+¦   ¦       five-key-takeaways-about-product-management-for-startups.mdx
+¦   ¦       fueling-the-content-machine-with-the-knowledge-it-needs.mdx
+¦   ¦       how-to-design-standout-products-in-the-modern-world.mdx
+¦   ¦       how-to-lead-your-content-service-team-into-the-ai-future.mdx
+¦   ¦       making-the-jump-from-b2c-to-b2b-content-management.mdx
+¦   ¦       new-ai-releases-for-better-faster-more-personalized-support.mdx
+¦   ¦       open-pros-new-and-improved-reporting-features.mdx
+¦   ¦       prepare-your-internal-knowledge-content-for-ai.mdx
+¦   ¦       the-new-era-of-ai-first-content-service-has-arrived.mdx
+¦   ¦       the-ultimate-guide-to-ai-management-in-the-age-of-new-tools.mdx
+¦   ¦       understanding-the-changing-economics-of-content-management.mdx
+¦   ¦       unlocking-customer-strategic-potential-with-ai.mdx
+¦   ¦       your-first-90-days-using-content-for-customer-service.mdx
+¦   ¦       
+¦   +---help
+¦           frequently-asked-questions.mdx
+¦           get-started.mdx
+¦           open-pro-plans-features.mdx
+¦           payments-faqs.mdx
+¦           what-is-open-pro.mdx
+¦           
++---public
+¦   ¦   favicon.ico
+¦   ¦   
+¦   +---fonts
+¦   ¦       nacelle-italic.woff2
+¦   ¦       nacelle-regular.woff2
+¦   ¦       nacelle-semibold.woff2
+¦   ¦       nacelle-semibolditalic.woff2
+¦   ¦       
+¦   +---images
+¦   ¦       404.jpg
+¦   ¦       avatar-01.jpg
+¦   ¦       avatar-02.jpg
+¦   ¦       avatar-03.jpg
+¦   ¦       avatar-04.jpg
+¦   ¦       avatar-group-01.jpg
+¦   ¦       avatar-group-02.jpg
+¦   ¦       avatar-group-03.jpg
+¦   ¦       avatar-group-04.jpg
+¦   ¦       blurred-shape-02.svg
+¦   ¦       blurred-shape-gray.svg
+¦   ¦       blurred-shape.svg
+¦   ¦       carousel-01.png
+¦   ¦       carousel-02.png
+¦   ¦       carousel-03.png
+¦   ¦       client-logo-01.svg
+¦   ¦       client-logo-02.svg
+¦   ¦       client-logo-03.svg
+¦   ¦       client-logo-04.svg
+¦   ¦       client-logo-05.svg
+¦   ¦       client-logo-06.svg
+¦   ¦       client-logo-07.svg
+¦   ¦       client-logo-08.svg
+¦   ¦       client-logo-09.svg
+¦   ¦       features.png
+¦   ¦       footer-illustration.svg
+¦   ¦       hero-image-01.jpg
+¦   ¦       large-testimonial-01.jpg
+¦   ¦       large-testimonial-02.jpg
+¦   ¦       logo.svg
+¦   ¦       page-illustration.svg
+¦   ¦       post-author-01.jpg
+¦   ¦       post-author-02.jpg
+¦   ¦       post-author-03.jpg
+¦   ¦       post-author-04.jpg
+¦   ¦       post-author-05.jpg
+¦   ¦       post-image-01.jpg
+¦   ¦       post-inner-image.jpg
+¦   ¦       post-thumb-01.jpg
+¦   ¦       post-thumb-02.jpg
+¦   ¦       post-thumb-03.jpg
+¦   ¦       post-thumb-04.jpg
+¦   ¦       post-thumb-05.jpg
+¦   ¦       post-thumb-06.jpg
+¦   ¦       post-thumb-07.jpg
+¦   ¦       post-thumb-08.jpg
+¦   ¦       post-thumb-09.jpg
+¦   ¦       post-thumb-10.jpg
+¦   ¦       post-thumb-11.jpg
+¦   ¦       post-thumb-12.jpg
+¦   ¦       post-thumb-13.jpg
+¦   ¦       post-thumb-14.jpg
+¦   ¦       post-thumb-15.jpg
+¦   ¦       secondary-illustration.svg
+¦   ¦       small-testimonial.jpg
+¦   ¦       team-01.jpg
+¦   ¦       team-02.jpg
+¦   ¦       team-03.jpg
+¦   ¦       team-04.jpg
+¦   ¦       team-05.jpg
+¦   ¦       team-06.jpg
+¦   ¦       team-07.jpg
+¦   ¦       team-08.jpg
+¦   ¦       team-09.jpg
+¦   ¦       team-10.jpg
+¦   ¦       team-11.jpg
+¦   ¦       team-12.jpg
+¦   ¦       team-mosaic-01.jpg
+¦   ¦       team-mosaic-02.jpg
+¦   ¦       team-mosaic-03.jpg
+¦   ¦       team-mosaic-04.jpg
+¦   ¦       testimonial-01.jpg
+¦   ¦       testimonial-02.jpg
+¦   ¦       testimonial-03.jpg
+¦   ¦       testimonial-04.jpg
+¦   ¦       testimonial-05.jpg
+¦   ¦       testimonial-06.jpg
+¦   ¦       testimonial-07.jpg
+¦   ¦       testimonial-08.jpg
+¦   ¦       testimonial-09.jpg
+¦   ¦       workflow-01.png
+¦   ¦       workflow-02.png
+¦   ¦       workflow-03.png
+¦   ¦       world-user-01.jpg
+¦   ¦       world-user-02.jpg
+¦   ¦       world-user-03.jpg
+¦   ¦       world-user-04.jpg
+¦   ¦       world-user-05.jpg
+¦   ¦       world-user-06.jpg
+¦   ¦       world-user-07.jpg
+¦   ¦       world-user-08.jpg
+¦   ¦       worldmap.png
+¦   ¦       
+¦   +---videos
+¦           video.mp4
+¦           
++---utils
+        useMasonry.tsx
+        useMousePosition.tsx
+        
