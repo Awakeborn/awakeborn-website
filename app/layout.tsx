@@ -2,6 +2,7 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 import Header from '@/components/ui/header';
 import Footer from '@/components/ui/footer';
+import LegalModal from '@/components/legal-modal'; // <-- Ensure path correctness
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${inter.variable} bg-gray-950 font-inter text-base text-gray-200`}>
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
+          <LegalModal /> {/* Add your modal here */}
           <main>{children}</main>
           <Footer />
         </div>
