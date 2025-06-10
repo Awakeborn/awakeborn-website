@@ -45,7 +45,7 @@ export default function LegalModal() {
             checked={agreed}
             onChange={(e) => setAgreed(e.target.checked)}
           />
-          I have read and agree to the{' '}
+          I have read and agree to the
           <a
             href="/legal"
             target="_blank"
