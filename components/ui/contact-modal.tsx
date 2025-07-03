@@ -1,17 +1,30 @@
 'use client'
 
 import { useState } from 'react';
+import Loading from './loading';
 
 export default function ContactModal({ onClose }: { onClose: () => void }) {
   const [email, setEmail] = useState('');
   const [type, setType] = useState('Issue');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock email trigger (you can replace this with actual API logic)
-    alert(`Message sent to team@awakeborn.com\nEmail: ${email}\nType: ${type}\nMessage: ${message}`);
-    onClose();
+    setIsLoading(true);
+    
+    try {
+      // Mock email trigger (you can replace this with actual API logic)
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      alert(`Message sent to team@awakeborn.com\nEmail: ${email}\nType: ${type}\nMessage: ${message}`);
+      onClose();
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -51,8 +64,8 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
             <button type="button" onClick={onClose} className="px-4 py-2 bg-gray-300 rounded">
               Cancel
             </button>
-            <button type="submit" className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
-              Send
+            <button type="submit" className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700" disabled={isLoading}>
+              {isLoading ? <Loading /> : 'Send'}
             </button>
           </div>
         </form>

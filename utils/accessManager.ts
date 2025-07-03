@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const filePath = path.join(process.cwd(), 'public/data/early-access.json');
+const filePath = path.join(process.cwd(), 'public/api/user-count');
 
 export function hasWalletAccess(wallet: string): boolean {
   const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));

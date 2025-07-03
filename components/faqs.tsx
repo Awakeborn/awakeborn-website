@@ -4,14 +4,14 @@ export default function Faqs() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="border-t border-gray-800 py-12 md:py-20 lg:border-0 lg:pt-0">
           {/* Section header */}
-          <div className="mb-12">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent md:text-3xl">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent drop-shadow-xl tracking-tight animate-fade-in-up mb-2">
               Frequently Asked Questions
             </h2>
           </div>
           {/* Faqs */}
-          <ul className="grid gap-8 md:grid-cols-2 lg:gap-y-12 xl:gap-x-16">
-            <li>
+          <ul className="grid gap-8 md:grid-cols-2 lg:gap-y-12 xl:gap-x-16 rounded-3xl bg-gray-950/80 border border-purple-900/40 shadow-2xl backdrop-blur-xl p-8 md:p-12 animate-fade-in-up ring-1 ring-purple-500/20">
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 What payment options does Open PRO accept?
               </h4>
@@ -21,7 +21,7 @@ export default function Faqs() {
                 for added convenience.
               </p>
             </li>
-            <li>
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 Do I need to be a user to view my data?
               </h4>
@@ -31,7 +31,7 @@ export default function Faqs() {
                 privacy and protection.
               </p>
             </li>
-            <li>
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 What if I want to cancel?
               </h4>
@@ -41,7 +41,7 @@ export default function Faqs() {
                 effect in no more than 7 business days.
               </p>
             </li>
-            <li>
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 What happens if I hit my usage limit?
               </h4>
@@ -51,7 +51,7 @@ export default function Faqs() {
                 upgrade to a higher plan if needed.
               </p>
             </li>
-            <li>
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 Do you offer a discount for non-profits?
               </h4>
@@ -61,7 +61,7 @@ export default function Faqs() {
                 credentials to apply for the discount.
               </p>
             </li>
-            <li>
+            <li className="animate-fade-in-up transition-all duration-200 hover:scale-[1.025] hover:shadow-xl hover:bg-gray-900/80 rounded-2xl p-4">
               <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
                 Will my data be private and safe?
               </h4>

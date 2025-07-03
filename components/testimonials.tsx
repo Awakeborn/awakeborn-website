@@ -115,7 +115,7 @@ export default function Testimonials() {
       <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
         {/* Section header */}
         <div className="mx-auto max-w-3xl pb-12 text-center">
-          <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+          <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent drop-shadow-xl tracking-tight animate-fade-in-up mb-2">
             Don't take our word for it
           </h2>
           <p className="text-lg text-indigo-200/65">
@@ -211,18 +211,48 @@ export default function Testimonials() {
             </div>
           </div>
 
+          {/* Testimonial grid */}
           {/* Cards */}
           <div
-            className="mx-auto grid max-w-sm items-start gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 animate-fade-in-up rounded-3xl bg-gray-950/80 border border-purple-900/40 shadow-2xl backdrop-blur-xl p-8 md:p-12 ring-1 ring-purple-500/20"
             ref={masonryContainer}
           >
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="group">
-                <Testimonial testimonial={testimonial} category={category}>
-                  {testimonial.content}
-                </Testimonial>
-              </div>
-            ))}
+            {testimonials.map((testimonial, idx) =>
+              testimonial.categories.includes(category) ? (
+                <div
+                  key={idx}
+                  className="relative rounded-2xl bg-gradient-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 p-5 backdrop-blur-xs transition-all duration-200 hover:shadow-xl hover:scale-[1.025] hover:bg-gray-900/80 animate-fade-in-up before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]"
+                >
+                  <div className="flex flex-col gap-4">
+                    <div>
+                      <Image src={testimonial.clientImg} height={36} alt="Client logo" />
+                    </div>
+                    <p className="text-indigo-200/65 before:content-['\201C'] after:content-['\201D']">
+                      {testimonial.content}
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <Image
+                        className="inline-flex shrink-0 rounded-full"
+                        src={testimonial.img}
+                        width={36}
+                        height={36}
+                        alt={testimonial.name}
+                      />
+                      <div className="text-sm font-medium text-gray-200">
+                        <span>{testimonial.name}</span>
+                        <span className="text-gray-700"> - </span>
+                        <a
+                          className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+                          href="#0"
+                        >
+                          {testimonial.company}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null
+            )}
           </div>
         </div>
       </div>

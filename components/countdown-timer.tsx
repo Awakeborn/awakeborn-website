@@ -33,7 +33,8 @@ export default function CountdownTimer() {
 
   return (
     <div className="text-lg text-purple-400 font-mono">
-      Launch in: {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+      {/* Launch in: {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s */}
+      AWAKEBORN IS LIVE
     </div>
   );
 }

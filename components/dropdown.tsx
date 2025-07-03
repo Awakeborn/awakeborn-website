@@ -50,7 +50,7 @@ export default function Dropdown({ children, title }: DropdownProps) {
           <path d="m1.06.19 3.5 3.5 3.5-3.5 1.061 1.06-4.56 4.56L0 1.25 1.06.19Z" />
         </svg>
       </button>
-      <span className="absolute right-0 top-full origin-top-left">        
+      <span className="absolute right-0 top-full origin-top-left">
         <Transition
           ref={dropdownRef}
           show={dropdownOpen}
