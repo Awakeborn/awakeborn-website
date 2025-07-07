@@ -22,8 +22,7 @@ const coreMembers = [
 ];
 
 const contributors = [
-    { name: 'Gautam Swain', details: 'Additional details coming soon.' },
-    { name: 'Subhas Basak', details: 'Additional details coming soon.' },
+    { name: 'Gautam Swain', details: 'Additional details coming soon.' }
 ];
 
 function SocialIcon({ type, href }: { type: 'x' | 'linkedin'; href: string }) {
